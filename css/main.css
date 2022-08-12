@@ -1,0 +1,32 @@
+div {
+  padding: 10px; }
+  div p {
+    color: red; }
+
+.red-twitter {
+  color: #0d8ef2; }
+
+.red-facebook {
+  color: #0048ff; }
+
+.red-instagram {
+  color: #eb18e1; }
+
+.boton, .boton-primario, .boton-secundario {
+  font-size: 1.5em;
+  border: solid 2px;
+  padding: 8px 16px;
+  margin: 8px; }
+
+.boton-primario {
+  background-color: red;
+  color: white; }
+
+.boton-secundario {
+  background-color: blue;
+  color: white; }
+
+div {
+  height: 24px;
+  width: 16px;
+  margin: 8px; }

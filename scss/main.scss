@@ -1,0 +1,52 @@
+div {
+    padding: 10px;
+
+    p {
+        color:  red;
+    }
+}
+
+// mapas
+$redes: (
+    twitter:rgb(13, 142, 242),
+    facebook: rgb(0, 72, 255),
+    instagram:rgb(235, 24, 225),
+);
+
+@each $red, $color in $redes {
+    .red-#{$red} {
+        color: $color;
+    }
+}
+
+//Extend
+.boton {
+    font-size: 1.5em;
+    border: solid 2px;
+    padding: 8px 16px;
+    margin: 8px;
+}
+
+.boton-primario{
+    @extend .boton;
+
+    background-color: red;
+    color: white;
+}
+
+.boton-secundario {
+    @extend .boton;
+
+    background-color: blue;
+    color: white;
+}
+
+//Mixins
+@mixin size ($alto, $ancho, $espaciado) {
+    height: $alto;
+    width: $ancho;
+    margin: $espaciado;
+}
+div {
+    @include size(24px,16px,8px )
+}
